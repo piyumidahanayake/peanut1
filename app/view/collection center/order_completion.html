@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="order_completion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral|Rubik|Trirong|Audiowide">
+    <link href='https://fonts.googleapis.com/css?family=Bevan' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <header>
+       
+        <div class="left_area">
+          <h3>Agro <span>Master</span><span style="margin-left:22%;font-family: z;font-weight: 800 ;">Kothalawal collection center</span></h3>
+        </div>
+        <div class="right_area">
+          <a href="#" class="logout_btn">Logout</a>
+        </div>
+      </header>
+      
+  
+      <div class="sidebar">
+        <div class="profile_info">
+          <img src="23.jpg" class="profile_image" alt="">
+          <h4>Kothalawala collection center</h4>
+        </div>
+        <button class="dropdown-btn">
+          <a href="#"><i class="fas fa-bars"></i><span>Home</span></a>
+      </button>
+        <button class="dropdown-btn" >
+          <a href="#"><i class="fas fa-bars"></i><span>Collections</span></a>
+      </button>
+      <div class="dropdown-container ">
+        <a href="#"><i class="fas fa-bars"><span></i>New stock</span></a>
+      </div>
+      <button class="dropdown-btn" style="background-color: rgba(24, 23, 23, 0.8);" >
+          <a  href="#"><i class="fas fa-bars"></i><span>Orders</span></a>
+      </button>
+      <div class="dropdown-container drop-active">
+        <a href="#"><i class="fas fa-bars"><span></i>Pending orders</span></a>
+        <a href="#"><i class="fas fa-bars"><span></i>Completed orders</span></a>
+        <a href="#"><i class="fas fa-bars"><span></i>Delivered orders</span></a>
+      </div>
+          <button class="dropdown-btn ">
+              <a href="#"><i class="fas fa-bars"></i><span>Farmers</span></a>
+          </button>
+          
+            <div class="dropdown-container ">
+              <a href="#"><i class="fas fa-bars"><span></i>Add farmer</span></a>
+              <a href="#"><i class="fas fa-bars"><span></i>Non listed broughts</span></a>
+              <a href="#"><i class="fas fa-bars"><span></i>Payment management</span></a>
+             
+            </div>
+            <button class="dropdown-btn" >
+              <a href="#"><i class="fas fa-bars"></i><span>Employees</span></a>
+          </button>
+          
+            <div class="dropdown-container ">
+              <a href="#"><i class="fas fa-bars"><span></i>Add Employee</span></a>
+              <a href="#"><i class="fas fa-bars"><span></i>Salary management</span></a>
+            </div>
+            
+          <button class="dropdown-btn">
+            <a href="#"><i class="fas fa-bars"></i><span>Excess</span></a>
+        </button>
+        
+          <div class="dropdown-container">
+            <a href="#"><i class="fas fa-bars"><span></i>Add Excess</span></a>
+            <a href="#"><i class="fas fa-bars"><span></i>Excess assignment</span></a>
+          </div>
+          <button class="dropdown-btn">
+            <a href="#"><i class="fas fa-bars"></i><span>Neccesity</span></a>
+        </button>
+        <div class="dropdown-container">
+          <a href="#"><i class="fas fa-bars"><span></i>order</span></a>
+          <a href="#"><i class="fas fa-bars"><span></i>pending</span></a>
+        </div>
+        <button class="dropdown-btn">
+          <a href="#"><i class="fas fa-bars"></i><span>Financial reports</span></a>
+      </button>
+      <div class="dropdown-container">
+        <a href="#"><i class="fas fa-bars"><span></i>sales</span></a>
+        <a href="#"><i class="fas fa-bars"><span></i>Expenses</span></a>
+      </div>
+        <button class="dropdown-btn">
+            <a href="#"><i class="fas fa-bars"></i><span>Return management</span></a>
+        </button>
+       
+          
+         
+      </div>
+      <!--sidebar end-->
+    <!--sidebar end-->
+
+    <div class="content">
+        <div class="testbox">
+        
+            <form action="/">
+              <div style="text-align:left;color:#006b38ff;padding:0px;font-family:bevan;font-size: 35px;text-align: center;">Order Completion</div>
+            
+              
+                <div class="table-header">
+                  <div class="col col-1">Product name</div>
+                  <div class="col col-2">Orderes quantity</div>
+                  <div class="col col-3">Assigned quantity</div>  
+                </div>
+                <div class="table-tx">
+                  <div class="col col-1">Carrot - p56</div>
+                  <div class="col col-2">67kg</div>
+                  <div class="col col-3"><input type="text" style="padding:0px;margin-top:0px;margin-bottom: auto;margin-top:auto;height:20px"></div>  
+                </div> <div class="table-tx">
+                  <div class="col col-1">Carrot - p56</div>
+                  <div class="col col-2">67kg</div>
+                  <div class="col col-3"><input type="text" style="padding:0px;margin-top:0px;margin-bottom: auto;margin-top:auto;height:20px"></div>  
+                </div>
+              <div class="item">
+                <p style="font-size: 14px;text-transform: uppercase; letter-spacing: 0.03em;">Set delivery Date</p>
+                <input type="date" name="name" required/>
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+              
+             
+             
+              <div class="btn-block">
+                <button id="submit"type="submit" href="/">Submit</button>
+              </div>
+            </form>
+          </div>
+    
+    </div>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
+
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+    </script>
+
+
+  </body>
+</html>
+      
